@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:background="@drawable/topbackgroundsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="-20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittextfieldbackground"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:text="FULL NAME*"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <EditText
+                            android:id="@+id/edtxtName"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:hint="abc Kumar"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittextfieldbackground"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:text="EMAIL*"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <EditText
+                            android:id="@+id/edtxtEmail"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:hint="abc@email.com"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittextfieldbackground"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:text="PASSWORD*"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <EditText
+                            android:id="@+id/edtxtpassword1"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:hint="***************"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittextfieldbackground"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:text="CONFIRM PASSWORD*"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <EditText
+                            android:id="@+id/edtxt_confirm_password"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:hint="***************"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/signup"
+                        android:elevation="3dp"
+                        android:padding="5dp"
+                        android:background="@drawable/btnbackground"
+                        android:src="@drawable/ic_baseline_arrow_right_alt_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

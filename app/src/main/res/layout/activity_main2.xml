@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+<LinearLayout
+  android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/listens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Listen"
+
+        />
+    <ListView
+        android:id="@+id/listviews"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/listen"
+        android:layout_marginTop="31dp" />
+
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_alignTop="@+id/writemsg"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/curvebc"
+                android:id="@+id/listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Send Request"
+
+                />
+            <Button
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/curvebc"
+                android:layout_margin="10dp"
+                android:id="@+id/listDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/listview"
+                android:layout_centerHorizontal="true"
+                android:text="List Devices" />
+
+
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listDevices"
+            android:layout_alignBottom="@+id/listDevices"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+        <ListView
+            android:padding="10dp"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/listview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:textColor="?android:attr/textColorLink"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_weight="3"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/searchbar_bc_addclarification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/writemsg"
+                    android:backgroundTint="#fff"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:hint="write here..."
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="4"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/send"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/addclarification_button"
+
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="send">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
